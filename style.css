@@ -4,10 +4,53 @@ body{
     font-size: large;
 }
 .my_grid_system {
+    /*
+    border: solid 2px red;
+    width: 1200px;
+    */
+    border: solid 2px red;
+    gap: 3px 10px;
     display: grid;
     grid-template-areas: 
         "header header header header header header"
         "nav    nav    nav    nav    nav    nav"
-        "side   side   art    art    art    art"
-        "fot    fot    fot    fot    fot    fot";
+        "side   .      art    art    art    ."
+        "fot    fot    fot    fot    fot    fot"
+        "fot2   fot2   fot2   fot2   fot2   fot2";
+    /*
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    */
+    justify-items: stretch;
+    height: 600px;
+}
+
+header {
+    grid-area: fot;
+    background-color: fuchsia;
+}
+
+nav {
+    grid-area: nav;
+    background-color: turquoise;
+}
+
+aside {
+    grid-area: side;
+    background-color: orange;
+}
+
+section {
+    grid-area: art;
+    background-color:  purple;
+}
+
+.footer-1 {
+    grid-area: header;
+    background-color:  burlywood;
+}
+
+.footer-2 {
+    grid-area: fot2;
+    background-color:  seagreen;
 }
