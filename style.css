@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+.my_grid_system {
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header"
+        "nav    nav    nav    nav    nav    nav"
+        "side   side   art    art    art    art"
+        "fot    fot    fot    fot    fot    fot";
+}
